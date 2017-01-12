@@ -7,6 +7,7 @@
   "scripts": {
     "test": "tape test/*.js | tap-spec",
     "lint": "eslint test/*.js index.js",
+    "ci": "npm run lint && npm run coverage",
     "prepublish": "nsp check",
     "coverage": "istanbul cover tape test/*.js",
     "dependencyCheck": "szero . --ci",
