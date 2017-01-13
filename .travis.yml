@@ -6,7 +6,7 @@ node_js:
 before_script:
   - npm install -g coveralls
 script:
-   - make ci
+   - npm run ci
 branches:
   only:
     - master
